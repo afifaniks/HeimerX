@@ -16,9 +16,38 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connected to: " />
+
+            <TextView
+                android:id="@+id/deviceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="None" />
+
+            <ImageButton
+                android:id="@+id/btDevies"
+                android:background="@drawable/bt_bg"
+                android:layout_width="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="30dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center"
             android:text="Joystick will appear here"/>
     </LinearLayout>
     <LinearLayout
@@ -34,11 +63,13 @@
             android:orientation="horizontal">
 
             <ImageButton
+                android:id="@+id/btnA"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:background="@drawable/a_btn_bg"
                 android:layout_margin="10dp"/>
             <ImageButton
+                android:id="@+id/btnB"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:background="@drawable/b_btn_bg"
@@ -52,11 +83,13 @@
             android:layout_marginLeft="20dp">
 
         <ImageButton
+            android:id="@+id/btnC"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:background="@drawable/c_btn_bg"
             android:layout_margin="10dp"/>
         <ImageButton
+            android:id="@+id/btnD"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:background="@drawable/d_btn_bg"
