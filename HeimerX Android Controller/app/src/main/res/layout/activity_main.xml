@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:gravity="center"
+        android:gravity="top"
         android:orientation="vertical">
 
         <LinearLayout
@@ -44,12 +44,18 @@
 
         </LinearLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="8"
-            android:gravity="center"
-            android:text="Joystick will appear here"/>
+        <com.erz.joysticklibrary.JoyStick
+            android:layout_weight="1"
+            android:id="@+id/joy1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:padColor="@color/btnBG"
+            android:layout_marginBottom="40sp"
+            app:buttonColor="@color/colorPrimary"
+            android:layout_gravity="center"/>
+
+
+
     </LinearLayout>
     <LinearLayout
         android:layout_weight="1"
